@@ -34,12 +34,12 @@ function printDepts(depts, parent) {
   
   	for (var i = 0; i < depts.length; i++) {
   		var li = document.createElement('li');
-    	li.innerHTML = depts[i].name;
-    	ul.appendChild(li);
+			li.innerHTML = depts[i].name;
+			ul.appendChild(li);
     
-    	if (depts[i].children) {
-    		printDepts(depts[i].children, li);
-   		}
+		if (depts[i].children) {
+			printDepts(depts[i].children, li);
+		}
   	}
 }
 
