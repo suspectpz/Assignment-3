@@ -1,15 +1,20 @@
 h1 {
-    text-align: center;
-  }
-  
-  h2 {
-    text-align: center;
-  }
-  
-  div {
-    border-style: solid;
-    border-width: 3px;
-    border-color: green;
-    width: 600px;
-    margin: auto;
-  }
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+div {
+  border-style: solid;
+  border-width: 4px;
+  border-color: green;
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+}
+
+div > ul > li {
+    list-style-type: none;
+}
