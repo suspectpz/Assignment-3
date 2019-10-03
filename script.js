@@ -28,19 +28,19 @@ const org2_depts = [
 
 function printDepts(depts, parent) {
 	if (depts.length > 0) {
-  	var ul = document.createElement('ul');
-    parent.appendChild(ul);
-  }
+  		var ul = document.createElement('ul');
+    	parent.appendChild(ul);
+  	}
   
-  for (var i = 0; i < depts.length; i++) {
-  	var li = document.createElement('li');
-    li.innerHTML = depts[i].name;
-    ul.appendChild(li);
+  	for (var i = 0; i < depts.length; i++) {
+  		var li = document.createElement('li');
+    	li.innerHTML = depts[i].name;
+    	ul.appendChild(li);
     
-    if (depts[i].children) {
-    	printDepts(depts[i].children, li);
-    }
-  }
+    	if (depts[i].children) {
+    		printDepts(depts[i].children, li);
+   		}
+  	}
 }
 
 const org1 = document.getElementById("org1");
